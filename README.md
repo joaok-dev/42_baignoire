@@ -2,7 +2,7 @@
 
 Este repositório não tem nenhum vínculo oficial com a Escola 42.
 
-[*Clique aqui para a versão em inglês do README*](#)
+[*Clique aqui para a versão em inglês do README*](README.en.md)
 
 # 🛁 42 Baignoire
 
