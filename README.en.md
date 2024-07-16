@@ -16,9 +16,9 @@ What really caught my attention about the school is the proposal of autonomy com
 
 ### Rules and Norms...
 
-With some military references, I believe they highly value discipline in various aspects. They have a [rules document](42_nrom.en.pdf) and a [manual](42_manual.en.pdf) that explains not only the technical part but also the behavioral, philosophical, and mental parts. Read and review it carefully before diving into the technical part.
+With some military references, I believe they highly value discipline in various aspects. They have a rules document and a [manual](42_manual.en.pdf) that explains not only the technical part but also the behavioral, philosophical, and mental parts. Read and review it carefully before diving into the technical part.
 
-Speaking of norms, they have the [Norminette](https://github.com/42School/norminette), which I consider almost like a linter, and there is also a whole pedagogical reasoning behind these rules. At first, I found it a bit strange, but as I study, I am getting used to it and sometimes even miss it when I see a code that does not follow the standard. Review the document and the repository carefully.
+Speaking of norms, they have the [Norminette](https://github.com/42School/norminette), which I consider almost like a linter, and there is also a whole pedagogical reasoning behind these [rules](42_norm.en.pdf). At first, I found it a bit strange, but as I study, I am getting used to it and sometimes even miss it when I see a code that does not follow the standard. Review the document and the repository carefully.
 
 ### What is the Order of Topics?
 
@@ -36,9 +36,7 @@ Moreover, I learned from them to use the `man` command in the terminal much more
 
 I think like any tool, if you use it the right way, it can be very useful. Just as it can "spit out" the answer to the exercise for you, it can also help you explain topics you didn't understand, propose extra challenges at the difficulty level you need. Anyway, I'm not going to teach you how to use AI, but avoid getting the ready answer. You are already studying alone and have no direct pressure - unless you are there - so there is no reason to deceive yourself here either.
 
-Use it wisely, don't stick to just one. I use Gemini, ChatGPT, Claude, GitHub Copilot, and often put one to confront the other - it's funny when they diverge on some point ;D
-
-Anyway, use it, but use it wisely. The goal is to learn and not generate the answer, especially since there are a lot of ready-made answer keys out there, you don't even need to spend your tokens.
+Use it wisely, don't stick to just one. I use Gemini, ChatGPT, Claude, GitHub Copilot, and often put one to confront the other - it's funny when they diverge on some point 🤣. Anyway, use it, but use it wisely. The goal is to learn and not generate the answer, especially since there are a lot of ready-made answer keys out there, you don't even need to spend your tokens.
 
 ### About Me
 

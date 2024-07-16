@@ -16,9 +16,9 @@ O que me chamou muito a atenção na escola é a proposta de autonomia somada a 
 
 ### Normas e Normas...
 
-Com algumas referências militares, acredito que eles prezam muito pela disciplina em vários aspectos. Eles possuem um [documento de regras](42_nrom.en.pdf) e um [manual](42_manual.en.pdf) que explica não só a parte técnica, como comportamental, filosófica e mental. Leia e veja com calma antes de ir para a parte técnica da coisa.
+Com algumas referências militares, acredito que eles prezam muito pela disciplina em vários aspectos. Eles possuem um documento de regras e um [manual](42_manual.en.pdf) que explica não só a parte técnica, como comportamental, filosófica e mental. Leia e veja com calma antes de ir para a parte técnica da coisa.
 
-Falando em normas, eles têm o [Norminette](https://github.com/42School/norminette), que eu considero quase como um linter, e também existe todo um porquê pedagógico por trás dessas regras. No começo, eu achei um pouco estranho, mas conforme vou estudando, já estou me adaptando e às vezes até sinto falta quando vejo um código fora do padrão. Veja o documento e o repositório com calma.
+Falando em normas, eles têm o [Norminette](https://github.com/42School/norminette), que eu considero quase como um linter, e também existe todo um porquê pedagógico por trás dessas [regras](42_norm.en.pdf). No começo, eu achei um pouco estranho, mas conforme vou estudando, já estou me adaptando e às vezes até sinto falta quando vejo um código fora do padrão. Veja o documento e o repositório com calma.
 
 ### Qual é a Ordem dos Assuntos?
 
@@ -36,9 +36,7 @@ Além disso, aprendi com eles a usar muito mais o comando `man` no terminal. Ele
 
 Acho que como qualquer ferramenta, se você usar do jeito certo ela pode ser muito útil. Da mesma forma que ela pode "cuspir" a resposta do exercício para você, ela também pode te ajudar a explicar tópicos que você não entendeu, propor mais desafios extras com o nível de dificuldade que você precisa. Enfim, não vou te ensinar a usar a AI, mas evite pegar a resposta pronta. Você já está estudando sozinho e não tem cobrança direta - a não ser que esteja lá - não tem por que se enganar aqui também.
 
-Use com sabedoria, não se prenda a uma só. Eu mesmo uso Gemini, ChatGPT, Claude, Github Copilot, e muitas vezes coloco uma para confrontar a outra - é engraçado quando elas divergem em algum ponto ;D
-
-Enfim, use, mas use com sabedoria. O objetivo é aprender e não gerar a resposta, até porque tem um monte de gabaritos prontos por aí, não precisa nem gastar seus tokens.
+Use com sabedoria, não se prenda a uma só. Eu mesmo uso Gemini, ChatGPT, Claude, Github Copilot, e muitas vezes coloco uma para confrontar a outra - é engraçado quando elas divergem em algum ponto 🤣. Enfim, use, mas use com sabedoria. O objetivo é aprender e não gerar a resposta, até porque tem um monte de gabaritos prontos por aí, não precisa nem gastar seus tokens.
 
 ### Sobre Mim
 

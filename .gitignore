@@ -1,0 +1,56 @@
+# Ignore compiled files
+*.o
+*.out
+*.a
+*.so
+*.exe
+
+# Ignore backup and temporary files
+*~
+*.swp
+*.bak
+*.tmp
+*.log
+
+# Ignore directories
+node_modules/
+build/
+dist/
+*.dSYM/
+.vscode/
+.idea/
+.DS_Store
+
+# Ignore OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Ignore Python specific files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Ignore C specific files
+*.d
+*.obj
+*.dll
+*.lib
+*.pdb
+
+# Ignore other language specific files
+*.class
+*.jar
+*.war
+*.ear
+
+# Ignore coverage reports
+coverage/
+*.lcov
+
+# Ignore configuration files
+.env
+.env.local
+.env.*.local
+
