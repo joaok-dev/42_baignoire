@@ -20,19 +20,19 @@ void	ft_print_comb(void)
 	int	j;
 	int	k;
 
-	i = 48;
-	while (i < 56)
+	i = '0';
+	while (i <= '7' )
 	{
 		j = i + 1;
-		while (j < 57)
+		while (j < '8')
 		{
 			k = j + 1;
-			while (k < 58)
+			while (k < '9')
 			{
 				ft_putchar(i);
 				ft_putchar(j);
 				ft_putchar(k);
-				if (i != 55 || j != 56 || k!= 57)
+				if (i != '7' || j != '8' || k!= '9')
 				{
 					ft_putchar(',');
 					ft_putchar(' ');
