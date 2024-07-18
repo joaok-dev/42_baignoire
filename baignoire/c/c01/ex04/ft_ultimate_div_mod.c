@@ -15,12 +15,13 @@ int	main(void)
 
 void	ft_ultimate_div_mod(int *a, int *b)
 {
-	int	div, mod;
+	int	div;
+	int	mod;
 
-	if (b)
+	if (b && *b != 0)
 	{
 		div = *a / *b;
-		mod = *a / *b;
+		mod = *a % *b;
 		*a = div;
 		*b = mod;
 	}

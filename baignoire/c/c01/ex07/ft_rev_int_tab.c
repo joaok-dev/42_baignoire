@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+void		ft_swap(int *a, int *b);
 void		ft_rev_int_tab(int *tab, int size);
 
 int	main(void)
@@ -24,16 +25,26 @@ int	main(void)
 	}
 }
 
+void	ft_swap(int *a, int *b)
+{
+	int	tmp;
+
+	tmp = *a;
+	*a = *b;
+	*b = tmp;
+}
+
 void	ft_rev_int_tab(int *tab, int size)
 {
-	int	i, tmp;
+	int	*start;
+	int	*end;
 
-	i = 0;
-	while (i < size / 2)
+	start = tab;
+	end = tab + size - 1;
+	while (start < end)
 	{
-		tmp = tab[i];
-		tab[i] = tab[size - 1 - i];
-		tab[size - 1 - i] = tmp;
-		i++;
+		ft_swap(start, end);
+		start++;
+		end--;
 	}
 }

@@ -9,12 +9,9 @@ int	main(void)
 
 void	ft_putstr(char *str)
 {
-	int	len;
-
-	len = 0;
-	while (str[len])
+	while (*str)
 	{
-		write(1, &str[len], 1);
-		len++;
+		write(1, str, 1);
+		str++;
 	}
 }

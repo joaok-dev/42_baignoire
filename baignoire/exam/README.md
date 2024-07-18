@@ -17,6 +17,8 @@ Aqui eu acho que é importante você estar preparado e confortável. Não pode s
 - **Navegar e usar o CLI** de maneira útil e prática.
 - O **básico da sintaxe em C**: loops e condicionais.
 - A parte inicial de **ponteiros**.
+- Usar o comando `man`.
+- Como funciona a tabela **ASCII**.
 
 ### Conselhos
 
@@ -29,6 +31,7 @@ Este exame é relativamente tranquilo. O último exercício é de fato o mais di
 ### Dicas
 
 > *Domine a reversão de string com o método clássico de two pointers.*
+
 > *Estude tanto índices quanto aritmética de ponteiros.*
 
 ---
