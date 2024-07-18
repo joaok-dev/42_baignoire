@@ -17,23 +17,17 @@ int	main(void)
 
 char	*ft_strncpy(char *dest, char *src, unsigned int n)
 {
-	unsigned int	i;
-	char			*d, *s;
+	char		*d;
+	const char	*s;
 
 	d = dest;
 	s = src;
-	i = 0;
-	while (i < n)
+	while(n--)
 	{
-		if (s[i] != '\0')
-		{
-			d[i] = s[i];
-		}
+		if (*s)
+			*d++ = *s++;
 		else
-		{
-			d[i] = '\0';
-		}
-		i++;
+			*d++ = '\0';
 	}
-	return (d);
+	return (dest);
 }

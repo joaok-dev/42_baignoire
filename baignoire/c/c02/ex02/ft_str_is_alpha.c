@@ -16,18 +16,13 @@ int	main(void)
 
 int	ft_str_is_alpha(char *str)
 {
-	int	i;
-
-	i = 0;
-	if (str[0] == '\0')
+	if (*str == '\0')
 		return (1);
-	while (str[i])
+	while (*str)
 	{
-		if (!((str[i] > 66 && str[i] < 91) || (str[i] > 96 && str[i] < 123)))
-		{
+		if (!((*str >= 'A' && *str <= 'Z' ) || (*str >= 'a' && *str < 'z')))
 			return (0);
-		}
-		i++;
+		str++;
 	}
 	return (1);
 }

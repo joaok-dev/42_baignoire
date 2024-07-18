@@ -13,16 +13,14 @@ int	main(void)
 
 char	*ft_strupcase(char *str)
 {
-	int		i;
 	char	*s;
 
 	s = str;
-	i = 0;
-	while (str[i])
+	while (*str)
 	{
-		if (str[i] >= 'a' && str[i] <= 'z')
-			s[i] = s[i] - 32;
-		i++;
+		if (*str >= 'a' && *str <= 'z')
+			*str -= 32;
+		str++;
 	}
 	return (s);
 }

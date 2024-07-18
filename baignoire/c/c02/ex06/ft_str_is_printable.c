@@ -16,16 +16,13 @@ int	main(void)
 
 int	ft_str_is_printable(char *str)
 {
-	int	i;
-
-	i = 0;
-	if (str[i] == '\0')
+	if (*str == '\0')
 		return (1);
-	while (str[i])
+	while (*str)
 	{
-		if (!(str[i] >= 32 && str[i] <= 126))
+		if (!(*str >= ' ' && *str <= '~'))
 			return (0);
-		i++;
+		str++;
 	}
 	return (1);
 }

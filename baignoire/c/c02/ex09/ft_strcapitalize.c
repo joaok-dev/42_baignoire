@@ -1,6 +1,58 @@
 #include <stdio.h>
 
-char		*ft_strcapitalize(char *str);
+int		ft_isalnum(char c)
+{
+	return ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z')
+		 || (c >= '0' && c <= '9'));
+}
+
+int		ft_isupper(char c)
+{
+	return (c >= 'A' && c <= 'Z');
+}
+
+int		ft_islower(char c)
+{
+	return (c >= 'a' && c <= 'z');
+}
+
+char	ft_toupper(char c)
+{
+	if (ft_islower(c))
+		return (c - 32);
+	return (c);
+}
+
+char	ft_tolower(char c)
+{
+	if (ft_isupper(c))
+		return (c + 32);
+	return (c);
+}
+
+char	*ft_strcapitalize(char *str)
+{
+	char	*s;
+	int		new_word;
+
+	s = str;
+	new_word = 1;
+	while (*s)
+	{
+		if (ft_isalnum(*s))
+		{
+			if (new_word)
+				*s = ft_toupper(*s);
+			else
+				*s = ft_tolower(*s);
+			new_word = 0;
+		}
+		else
+			new_word = 1;
+		s++;
+	}
+	return (str);
+}
 
 int	main(void)
 {
@@ -19,27 +71,4 @@ int	main(void)
 	return (0);
 }
 
-char	*ft_strcapitalize(char *str)
-{
-	int	i,	new_word;
 
-	i = 0;
-	new_word = 1;
-	while (str[i])
-	{
-		if ((str[i] >= 'a' && str[i] <= 'z')
-			|| (str[i] >= 'A' && str[i] <= 'Z')
-			|| (str[i] >= '0' && str[i] <= '9'))
-		{
-			if (new_word && (str[i] >= 'a' && str[i] <= 'z'))
-				str[i] = str[i] - 32;
-			else if (!new_word && (str[i] >= 'A' && str[i] <= 'Z'))
-				str[i] = str[i] + 32;
-			new_word = 0;
-		}
-		else
-			new_word = 1;
-		i++;
-	}
-	return (str);
-}

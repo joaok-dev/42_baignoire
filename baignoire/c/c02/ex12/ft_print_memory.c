@@ -8,13 +8,10 @@ void	ft_putchar(char c)
 void	ft_putstr(char *str)
 {
 	while (*str)
-	{
-		ft_putchar(*str);
-		str++;
-	}
+		ft_putchar(*str++);
 }
 
-int	ft_char_is_printable(char c)
+int		ft_char_is_printable(char c)
 {
 	return (c >= 32 && c <= 126);
 }
@@ -24,79 +21,79 @@ void	ft_print_hex(unsigned char c)
 	char	*hex;
 
 	hex = "0123456789abcdef";
-	ft_putchar(hex[c / 16]);
-	ft_putchar(hex[c % 16]);
+	ft_putchar(hex[c >> 4]);
+	ft_putchar(hex[c & 0xF]);
 }
 
-void	ft_print_address(unsigned long addr)
+void	ft_print_address(void *addr)
 {
-	char	addr_str[17];
-	int		i;
+	unsigned long	value;
+	char			*hex;
+	char			buffer[17];
+	char			*ptr;
 
-	i = 0;
-	while (i < 16)
+	value = (unsigned long)addr;
+	hex = "0123456789abcdef";
+	ptr = buffer + 16;
+	*ptr = '\0';
+	while (ptr > buffer)
 	{
-		addr_str[i] = '0';
-		i++;
+		*--ptr = hex[value & 0xF];
+		value >>= 4;
 	}
-	addr_str[16] = '\0';
-	i = 15;
-	while (i >= 0)
-	{
-		addr_str[i] = "0123456789abcdef"[addr % 16];
-		addr = addr / 16;
-		i--;
-	}
-	ft_putstr(addr_str);
+	ft_putstr(buffer);
 }
 
 void	ft_print_memory_line(void *addr, unsigned int size)
 {
 	unsigned char	*ptr;
-	unsigned int	i;
+	unsigned char	*end;
+	unsigned char	*char_ptr;
 
-	ptr = (unsigned char *)addr;
-	ft_print_address((unsigned long)ptr);
+	ptr = addr;
+	if (size < 16)
+		end = ptr + size;
+	else
+		end = ptr + 16;
+	ft_print_address(addr);
 	ft_putstr(": ");
-	i = 0;
-	while (i < 16)
+	while (ptr < end)
 	{
-		if (i < size)
-			ft_print_hex(ptr[i]);
-		else
-			ft_putstr("  ");
-		if (i % 2)
+		ft_print_hex(*ptr++);
+		if ((ptr - (unsigned char *)addr) & 1)
 			ft_putchar(' ');
-		i++;
 	}
-	i = 0;
-	while (i < size && i < 16)
+	while (ptr++ < (unsigned char *)addr + 16)
 	{
-		if (ft_char_is_printable(ptr[i]))
-			ft_putchar(ptr[i]);
+		ft_putstr("  ");
+		if ((ptr - (unsigned char *)addr) & 1)
+			ft_putchar(' ');
+	}
+	char_ptr = addr;
+	while (char_ptr < end)
+	{
+		if (ft_char_is_printable(*char_ptr))
+			ft_putchar(*char_ptr);
 		else
 			ft_putchar('.');
-		i++;
+		char_ptr++;
 	}
 	ft_putchar('\n');
 }
 
 void	ft_print_memory(void *addr, unsigned int size)
 {
-	unsigned int	i;
-	unsigned int	block_size;
+	unsigned char	*ptr;
+	unsigned char	*end;
 
-	if (size == 0)
+	if (!size)
 		return ;
-	i = 0;
-	while (i < size)
+	ptr = addr;
+	end = ptr + size;
+	while (ptr < end)
 	{
-		if (size - i >= 16)
-			block_size = 16;
-		else
-			block_size = size - i;
-		ft_print_memory_line(addr + i, block_size);
-		i += 16;
+		ft_print_memory_line(ptr, end - ptr);
+		ptr += 10;
 	}
 }
 

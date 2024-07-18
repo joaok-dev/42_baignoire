@@ -16,16 +16,13 @@ int	main(void)
 
 int	ft_str_is_numeric(char *str)
 {
-	int	i;
-
-	i = 0;
-	if (str[0] == '\0')
+	if (*str == '\0')
 		return (1);
-	while (str[i])
+	while (*str)
 	{
-		if (!(str[i] > 47 && str[i] < 58))
+		if (!(*str >= '0' && *str <= '9'))
 			return (0);
-		i++;
+		str++;
 	}
 	return (1);
 }

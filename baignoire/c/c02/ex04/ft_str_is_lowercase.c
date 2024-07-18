@@ -16,16 +16,13 @@ int	main(void)
 
 int	ft_str_is_lowercase(char *str)
 {
-	int	i;
-
-	i = 0;
-	if (str[0] == '\0')
+	if (*str == '\0')
 		return (1);
-	while (str[i])
+	while (*str)
 	{
-		if (!(str[i] > 96 && str[i] < 123))
+		if (!(*str >= 'a' && *str <= 'z'))
 			return (0);
-		i++;
+		str++;
 	}
 	return (1);
 }

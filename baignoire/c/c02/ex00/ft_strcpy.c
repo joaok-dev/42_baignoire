@@ -27,26 +27,10 @@ int	main(void)
 
 char	*ft_strcpy(char *dest, char *src)
 {
-	int	i;
+	char	*d;
 
-	i = 0;
-	while (src[i])
-	{
-		dest[i] = src[i];
-		i++;
-	}
-	dest[i] = '\0';
+	d = dest;
+	while ((*d++ = *src++) != '\0')
+		;
 	return (dest);
 }
-/*
-char	*ft_strcpy(char *dest, char *src)
-{
-    char *d = dest;
-    char *s = src;
-
-    while ((*d++ = *s++) != '\0')
-        ;
-
-    return (dest);
-}
-*/
