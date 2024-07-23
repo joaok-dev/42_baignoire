@@ -5,8 +5,8 @@ char	*ft_strstr(char *str, char *to_find)
 	char	*s;
 	char	*f;
 
-	if (*to_find == '\0')
-		return (str);
+	if (*to_find)
+		return ((char *)str);
 	while (*str)
 	{
 		s = str;
@@ -16,24 +16,23 @@ char	*ft_strstr(char *str, char *to_find)
 			s++;
 			f++;
 		}
-		if (*f == '\0')
-			return (str);
+		if (*f)
+			return ((char *)str);
 		str++;
 	}
-	return (0);
+	return (NULL);
 }
 
 int	main(void)
 {
-	char	str[] = "Hello, World!";
-	char	to_find[] = "World";
+	char	*str = "Hello, World!";
+	char	*to_find = "World";
+	char	*result;
 
-	char	*result = ft_strstr(str, to_find);
-
+	result = ft_strstr(str, to_find);
 	if (result)
 		printf("Substring found at position: %ld\n", result - str);
 	else
 		printf("Substring not found.\n");
-
 	return (0);
 }

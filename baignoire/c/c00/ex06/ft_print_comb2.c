@@ -23,25 +23,25 @@ void	ft_print_number(int n)
 
 void	ft_print_comb2(void)
 {
-	int	i;
-	int	j;
+	int	pair1;
+	int	pair2;
 
-	i = 0;
-	while (i <= 98)
+	pair1 = 0;
+	while (pair1 <= 98)
 	{
-		j = i + 1;
-		while (j <= 99)
+		pair2 = pair1 + 1;
+		while (pair2 <= 99)
 		{
-			ft_print_number(i);
+			ft_print_number(pair1);
 			ft_putchar(' ');
-			ft_print_number(j);
-			if (!(i == 98 && j == 99))
+			ft_print_number(pair2);
+			if (!(pair1 == 98 && pair2 == 99))
 			{
 				ft_putchar(',');
 				ft_putchar(' ');
 			}
-			j++;
+			pair2++;
 		}
-		i++;
+		pair1++;
 	}
 }

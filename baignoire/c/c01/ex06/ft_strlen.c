@@ -10,12 +10,10 @@ int	main(void)
 
 int	ft_strlen(char *str)
 {
-	int	len;
+	char	*s;
 
-	len = 0;
-	while (str[len])
-	{
-		len++;
-	}
-	return (len);
+	s = str;
+	while (*s)
+		s++;
+	return (s - str);
 }

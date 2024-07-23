@@ -1,32 +1,55 @@
 #include <stdio.h>
+#include <stdlib.h>
 
-char	*ft_strncat(char *dest, char *src, unsigned	int nb)
+size_t	ft_strlen(const char *str)
 {
-	char			*d;
-	char			*s;
-	unsigned int	i;
+	const char	*ptr;
 
-	d = dest;
-	s = src;
-	i = 0;
-	while (*d != '\0')
-		d++;
-	while (*s != '\0' && i < nb)
+	ptr = str;
+	while (*ptr)
+		ptr++;
+	return (ptr - str);
+}
+
+char	*ft_strncat(char *dest, char *src, unsigned int nb)
+{
+	char	*ptr;
+
+	ptr = dest;
+	while (*ptr)
+		ptr++;
+	while (*src && nb > 0)
 	{
-		*d++ = *s++;
-		i++;
+		*ptr++ = *src++;
+		nb--;
 	}
-	*d = '\0';
-	return (d);
+	*ptr = '\0';
+	return (dest);
 }
 
 int	main(void)
 {
-	char	dest[50] = "Hello, ";
-	char	src[] = "world!";
-	int		n = 3;
+	char	*s1;
+	char	*s2;
+	char	*result;
+	size_t	len1;
+	size_t	len2;
+	size_t	n;
 
-	ft_strncat(dest, src, n);
-	printf("Concatenated string: %s\n", dest);
+	s1 = "world!";
+	s2 = "Hello, ";
+	len1 = ft_strlen(s1);
+	len2 = ft_strlen(s2);
+	n = 3;
+	result = (char *)malloc((len1 + n + 1) * sizeof(char));
+	if (!result)
+	{
+		printf("Memory allocation failed\n");
+		return (1);
+	}
+	result[0] = '\0';
+	ft_strncat(ft_strncat(result, s1, len1), s2, n);
+	printf("Concatenated string: %s\n", result);
+	free(result);
 	return (0);
 }

@@ -16,31 +16,32 @@ void	ft_putchar(char c)
 
 void	ft_print_comb(void)
 {
-	int	i;
-	int	j;
-	int	k;
+	int	first_digit;
+	int	second_digit;
+	int	third_digit;
 
-	i = '0';
-	while (i <= '7' )
+	first_digit = '0';
+	while (first_digit <= '7' )
 	{
-		j = i + 1;
-		while (j < '8')
+		second_digit = first_digit + 1;
+		while (second_digit < '8')
 		{
-			k = j + 1;
-			while (k < '9')
+			third_digit = second_digit + 1;
+			while (third_digit < '9')
 			{
-				ft_putchar(i);
-				ft_putchar(j);
-				ft_putchar(k);
-				if (i != '7' || j != '8' || k!= '9')
+				ft_putchar(first_digit);
+				ft_putchar(second_digit);
+				ft_putchar(third_digit);
+				if (first_digit != '7' || second_digit != '8'
+					|| third_digit!= '9')
 				{
 					ft_putchar(',');
 					ft_putchar(' ');
 				}
-				k++;
+				third_digit++;
 			}
-			j++;
+			second_digit++;
 		}
-		i++;
+		first_digit++;
 	}
 }
