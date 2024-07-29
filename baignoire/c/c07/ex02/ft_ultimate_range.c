@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/* Function to allocate and initialize a range of integers from min to max */
 int	ft_ultimate_range(int **range, int min, int max)
 {
 	int	*result;
@@ -14,18 +15,14 @@ int	ft_ultimate_range(int **range, int min, int max)
 	}
 	size = max - min;
 	result = (int *)malloc(size * sizeof(int));
-	if (result == NULL)
+	if (!result)
 	{
 		*range = NULL;
 		return (-1);
 	}
 	ptr = result;
 	while (min < max)
-	{
-		*ptr = min;
-		ptr++;
-		min++;
-	}
+		*ptr++ = min++;
 	*range = result;
 	return (size);
 }
@@ -36,7 +33,7 @@ int	main(void)
 	int	max;
 	int	*range;
 	int	size;
-	int	i;
+	int	*ptr;
 
 	min = 3;
 	max = 10;
@@ -51,12 +48,9 @@ int	main(void)
 		printf("No range to allocate.\n");
 		return (0);
 	}
-	i = 0;
-	while (i < size)
-	{
-		printf("%d ", range[i]);
-		i++;
-	}
+	ptr = range;
+	while (ptr < range + size)
+		printf("%d ", *ptr++);
 	printf("\n");
 	free(range);
 	return (0);

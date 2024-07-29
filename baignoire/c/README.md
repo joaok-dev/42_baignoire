@@ -50,7 +50,10 @@ Sem pegadinhas, sem saltos exponenciais de dificuldade, reaproveita muito do que
 
 ## C07
 
-No momento em que vos escrevo eu estou exatamente aqui, a segunda fase dos ponteiros. Estamos estudando alocação dinâmica de memória, algo específico da linguagem C, mas que contempla toda essa parte de fundamentos da computação - lidar diretamente com a memória, apesar de difícil, é ótimo para entender melhor como as coisas funcionam.
+## C07
 
-O que eu pude notar é que se você está com dificuldade e não aprendeu ponteiros direito, vai ser 10x mais difícil fazer isso aqui. É parecido com o C00 e com o C04, ele dá aquele salto de dificuldade grande nos exercícios finais, misturando assuntos difíceis com um nível mais avançado de algoritmo e lógica, e pleno domínio da sintaxe C também - não está fácil.
+*Aqui temos a segunda fase dos ponteiros.* Estamos estudando **alocação dinâmica de memória**, algo específico da linguagem C, mas que contempla toda essa parte de fundamentos da computação. Lidar diretamente com a memória, apesar de difícil, é ótimo para entender melhor como as coisas funcionam. Resumidamente, você vai usar `malloc` de tudo que é jeito.
 
+O que eu pude notar é que, se você está com dificuldade e não aprendeu ponteiros direito, vai ser **10x mais difícil** fazer isso aqui. É parecido com o C00 e com o C04: ele dá aquele salto de dificuldade grande nos exercícios finais, misturando assuntos difíceis com um nível mais avançado de **algoritmo e lógica**, e pleno domínio da **sintaxe C** também - não está fácil.
+
+Nos últimos 3 exercícios, ele parece fácil, mas eu achei **muito, muito difícil**. Além da alocação dinâmica de memória, que é o foco desse módulo, se prepare para lidar com **manipulação de string**, **aritmética de ponteiros**, **algoritmo de conversão de base** e **validação**. É um grande compilado de tudo, disparado o menor e mais difícil até agora para mim.
