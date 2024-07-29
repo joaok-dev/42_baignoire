@@ -3,58 +3,60 @@
 
 int	ft_strlen(char *str)
 {
-	char	*s;
+	char	*end;
 
-	s = str;
-	while (*s)
-		s++;
-	return (s - str);
+	end = str;
+	while (*end)
+		end++;
+	return (end - str);
 }
 
 int	is_valid_base(char *base)
 {
-	char	seen[256] = {0};
-	char	*b;
+	char	*b1;
+	char	*b2;
 
-	b = base;
 	if (ft_strlen(base) < 2)
 		return (0);
-	while (*b)
+	b1 = base;
+	while (*b1)
 	{
-		if (*b == '+' || *b == '-' || (*b >= 9 && *b <= 13) || *b == 32)
+		if (*b1 == '+' || *b1 == '-' || *b1 == ' '
+			|| (*b1 >= '\t' && *b1 <= '\r'))
 			return (0);
-		if (seen[(unsigned char)*b])
-			return (0);
-		seen[(unsigned char)*b] = 1;
-		b++;
+		b2 = b1 + 1;
+		while (*b2)
+		{
+			if (*b1 == *b2)
+				return (0);
+			b2++;
+		}
+		b1++;
 	}
 	return (1);
 }
 
-int	get_index_in_base(char c, char *base)
+char	*get_char_in_base(char c, char *base)
 {
-	char	*b;
-
-	b = base;
-	while (*b)
-	{
-		if (*b == c)
-			return (b - base);
-		b++;
-	}
-	return (-1);
+	while (*base && *base != c)
+		base++;
+	if (*base)
+		return (base);
+	return (NULL);
 }
 
 int	ft_atoi_base(char *str, char *base)
 {
-	int	base_size, result, sign, index;
+	int		result;
+	int		sign;
+	char	*base_end;
 
 	if (!is_valid_base(base))
 		return (0);
-	base_size = ft_strlen(base);
 	result = 0;
 	sign = 1;
-	while ((*str >= 9 && *str <= 13) || *str == 32)
+	base_end = base + ft_strlen(base);
+	while (*str == ' ' || (*str >= '\t' && *str <= '\r'))
 		str++;
 	while (*str == '+' || *str == '-')
 	{
@@ -62,12 +64,9 @@ int	ft_atoi_base(char *str, char *base)
 			sign = -sign;
 		str++;
 	}
-	while (*str)
+	while (*str && get_char_in_base(*str, base))
 	{
-		index = get_index_in_base(*str, base);
-		if (index == -1)
-			break ;
-		result = result * base_size + index;
+		result = result * (base_end - base) + (get_char_in_base(*str, base) - base);
 		str++;
 	}
 	return (result * sign);
