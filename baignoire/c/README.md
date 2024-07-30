@@ -50,10 +50,25 @@ Sem pegadinhas, sem saltos exponenciais de dificuldade, reaproveita muito do que
 
 ## C07
 
-## C07
-
 *Aqui temos a segunda fase dos ponteiros.* Estamos estudando **alocação dinâmica de memória**, algo específico da linguagem C, mas que contempla toda essa parte de fundamentos da computação. Lidar diretamente com a memória, apesar de difícil, é ótimo para entender melhor como as coisas funcionam. Resumidamente, você vai usar `malloc` de tudo que é jeito.
 
 O que eu pude notar é que, se você está com dificuldade e não aprendeu ponteiros direito, vai ser **10x mais difícil** fazer isso aqui. É parecido com o C00 e com o C04: ele dá aquele salto de dificuldade grande nos exercícios finais, misturando assuntos difíceis com um nível mais avançado de **algoritmo e lógica**, e pleno domínio da **sintaxe C** também - não está fácil.
 
 Nos últimos 3 exercícios, ele parece fácil, mas eu achei **muito, muito difícil**. Além da alocação dinâmica de memória, que é o foco desse módulo, se prepare para lidar com **manipulação de string**, **aritmética de ponteiros**, **algoritmo de conversão de base** e **validação**. É um grande compilado de tudo, disparado o menor e mais difícil até agora para mim.
+
+## C08
+
+Depois da tempestade, vem a calmaria. Nesse módulo, a palavra-chave é **modularidade**. É um conjunto de exercícios pequeno, relativamente leve e sem pegadinhas. Se você não aprendeu ou fez o 07 nas coxas, vai bater cabeça. Caso contrário, vai ser mamão com açúcar. Novos conceitos são introduzidos, e a expansão de mente é muito grande. Acho que a gente aprende conceitos e trabalha nossa visão de uma forma que vai muito além do C aqui. Sementinhas importantes para nossa carreira são plantadas.
+
+Procure vídeos, aulas, artigos, qualquer coisa útil sobre:
+
+- **Estrutura de arquivos e organização de projetos em C**
+- **Header e source files em C**, com foco no `.h`
+- **Introdução ao processo de compilação em C** (opcional, mas útil)
+- Tudo possível sobre **structures** em C (muito importante!!!)
+
+Tem outros tópicos importantes também que derivam da lista acima, que naturalmente você vai esbarrar ao longo dos estudos, como a parte de macro e outras coisas importantes ligadas ao header. Eu concluo que até então nos foram apresentadas peças do quebra-cabeça e aqui a gente começa a montá-lo. Se tudo foi feito bonitinho e certinho até aqui, é muito mais uma revisão com reciclagem do que ter que ficar inventando muita coisa nova. Eu gostei.
+
+## C09
+
+Estamos aqui nesse exato momento.
