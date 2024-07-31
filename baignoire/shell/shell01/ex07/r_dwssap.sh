@@ -13,4 +13,3 @@ sort -r |                      # Sort the reversed login names in reverse alphab
 sed -n "${FT_LINE1},${FT_LINE2}p" |  # Select lines between FT_LINE1 and FT_LINE2 (inclusive)
 paste -sd ', ' - |             # Join the selected lines into a single line, separated by ', '
 sed 's/$/./'                   # Add a period (.) at the end of the line
-

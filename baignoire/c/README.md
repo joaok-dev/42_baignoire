@@ -71,4 +71,12 @@ Tem outros tópicos importantes também que derivam da lista acima, que naturalm
 
 ## C09
 
-Estamos aqui nesse exato momento.
+Lembra que eu coloquei compilação como facultativo no módulo anterior? Pois então… aqui é **OBRIGATÓRIO**. Um módulo curto, acho que o menor de todos até agora, mas com uma camada de conteúdo muito profunda. Veja bem, não disse complexa, disse profunda. Abre portas para conhecer muita coisa nova e importante, e praticamente tudo vai girar em torno do processo de **compilação + Makefile**.
+
+Ele vai flertar com uma revisão de shell e no final coloca um copy and paste de um exercício difícil do módulo 7, um tanto quanto descolado do que está sendo discutido ali. Acho que vem como revisão. Se você fez bem feito, não tem muito que inventar, copia e revisa. Agora, se você não fez, é uma baita oportunidade porque é um exercício difícil que exige muito do domínio da sintaxe básica do C.
+
+Existem vários conteúdos de qualidade por aí. Recomendo pelo menos umas 2 aulas bem assistidas no YouTube, mas se eu tivesse que escolher apenas uma referência para esse tema, **[seria essa aqui.](https://makefiletutorial.com/#getting-started)** Não negligencie essa parte, mas cuidado pra não ir longe demais e ficar viajando por aí.
+
+## C10
+
+Estamos aqui no momento.
