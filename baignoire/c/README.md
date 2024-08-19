@@ -79,4 +79,14 @@ Existem vários conteúdos de qualidade por aí. Recomendo pelo menos umas 2 aul
 
 ## C10
 
-Estamos aqui no momento.
+Esse módulo foi um divisor de águas para mim. Ele pode ser o mais divertido até aqui, pois você trabalha com uma estrutura de arquivos e um manejo mais próximo de um projeto real. Começa tranquilo, mas o `ex02` e o `ex03` podem te levar ao inferno, como aconteceu comigo, então cuidado.
+
+Aprendi algo crucial: mesmo gostando da jornada solitária, a piscina e a metodologia são feitas para o **peer-to-peer**. Você vai precisar de ajuda de pessoas, não do ChatGPT ou do Google.
+
+Me empolguei e me perdi tentando criar algo mais completo, mas com as limitações do exercício, isso complica. Se pudesse voltar, faria só o que o exercício pede, da forma mais simples. Minha resolução ficou pela metade.
+
+Você vai revisitar conversão de números para diferentes bases, então, pode reciclar lógica de exercícios anteriores. Cuidado com o `argparse`; as limitações podem complicar. Para mim, o `tail` foi muito mais difícil que o primeiro.
+
+## C11
+
+Estamos aqui agora.
