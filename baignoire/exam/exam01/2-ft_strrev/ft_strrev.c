@@ -10,11 +10,11 @@ int	ft_strlen(char *str)
 
 void	ft_swap_char(char *a, char *b)
 {
-	char	*tmp;
+	char	tmp;
 
-	tmp = a;
-	a = b;
-	b = tmp;
+	tmp = *a;
+	*a = *b;
+	*b = tmp;
 }
 
 char	*ft_strrev(char *str)
