@@ -181,4 +181,32 @@ Nenhum grande bicho de 7 cabeças, mas bati um pouco de cabeça para lidar com a
 
 ⚠️ Se você está acostumado com índices, prepare-se para um pequeno desafio mental ao trabalhar com ponteiros!
 
-## C12: Estamos Aqui 🏁
+## C12: Estruturas de Dados - A Montanha-Russa 🎢
+
+Lembra do spoiler que eu mencionei? Pois é, estruturas de dados chegaram, mas não da forma que eu esperava.
+
+> "Prepare-se para o módulo mais extenso até agora!"
+
+💡 Dica crucial: Se você não tem base em estruturas de dados, não tente fazer isso sozinho. Assista playlists ou masterclasses no YouTube antes de começar.
+
+Este módulo é uma verdadeira montanha-russa:
+
+1. Mais de uma dezena de exercícios 📚
+2. Foco em linked lists 🔗
+3. Complexidade questionável para iniciantes 🤯
+
+⚠️ Pré-requisito fundamental: Domínio de ponteiros. Sem isso, você vai patinar!
+
+Honestamente? Se não fosse pela minha introdução prévia no curso CS50x de Harvard com o Malan, eu poderia ter jogado a toalha no meio do caminho. A abordagem sem abstrações da 42 adiciona uma camada extra de complexidade que pode ser desafiadora.
+
+> *"Cair de paraquedas num tema relativamente difícil de materializar para iniciantes? Complicado, viu!"*
+
+### Minha experiência pessoal 🎭
+
+- Do meio para o final, a dificuldade aumenta consideravelmente
+- Códigos curtos, mas lógica complexa
+- Senti falta dos meus companheiros de jornada (lembra do C10?)
+
+Não vou mentir, não gostei muito da abordagem desse assunto aqui. A falta de contexto e base pode deixar muita gente perdida. Mas, se você persistir, vai sair com uma boa base inicial em estrutura de dados! 💪
+
+## C13: Estamos Aqui 🏁
