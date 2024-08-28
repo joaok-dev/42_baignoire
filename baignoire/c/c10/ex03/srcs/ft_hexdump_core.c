@@ -100,7 +100,7 @@ void	ft_format_and_print_chunk(const unsigned char *buf, size_t len,
 void	ft_format_offset(char *dest, size_t offset)
 {
 	int	i;
-
+	char	*hex;
 	i = 7;
 	while (i >= 0)
 	{
