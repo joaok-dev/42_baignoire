@@ -209,4 +209,33 @@ Honestamente? Se não fosse pela minha introdução prévia no curso CS50x de Ha
 
 Não vou mentir, não gostei muito da abordagem desse assunto aqui. A falta de contexto e base pode deixar muita gente perdida. Mas, se você persistir, vai sair com uma boa base inicial em estrutura de dados! 💪
 
-## C13: Estamos Aqui 🏁
+## C13: Navegando pela Floresta das Estruturas de Dados 🌳
+
+Se você tá esperando fechar com chave de ouro dominando o C, esquece. Esse módulo não é sobre a linguagem C, é quase que exclusivamente sobre estrutura de dados... na verdade, é 100% sobre árvores.
+
+Na mesma pegada do módulo anterior, mais curto, a dificuldade está em entender como essa estrutura funciona. O C é apenas um instrumento, os códigos são simples, mas os desafios permanecem:
+
+- Falta de recursos e aulas
+- Pouca ajuda disponível
+- Dificuldade em materializar conceitos sozinho
+
+Isso conflita com o que eu entendi ser a essência da escola: a concretização aqui se torna muito difícil.
+
+> [!IMPORTANT]
+> Dica de sobrevivência: vá estudar em vídeo aulas, abaixe suas expectativas e não ache que é fácil. Eu sinceramente não considero ter aprendido completamente e com certeza é um tema que eu vou voltar várias e várias vezes.
+
+💡 Em algum momento eu escrevi lá atrás que eu iria colher os frutos de procurar focar em aritmética de ponteiros ao invés de índices, e sinceramente eu sinto que eu colhi. Longe de ser especialista, mas sem ponteiro aqui tu não resolve, e ter me forçado a trabalhar com essa abordagem lá atrás tornou a jornada um pouco mais fácil aqui.
+
+Isso não significa que é fácil, tá? Significa que eu permiti passar mais tempo tentando focar na estrutura de dados do que na sintaxe e em como a parte dos ponteiros atuam aqui.
+
+Talvez esse tópico seja um prelúdio para o que venha a seguir pós piscina. Não sei exatamente qual é o próximo passo, mas fico feliz de ter acabado. Foi uma jornada e tanto, com mais altos que baixos e eu pretendo escrever mais sobre isso em algum outro lugar.
+
+### Próximos Passos
+
+Ainda ficam pendentes:
+
+1. Rushs (não tenho certeza se/como farei)
+2. Exam03 (certeza que farei, mas em outro momento)
+3. BSQ (em dúvida)
+
+Agora preciso respirar, descansar e revisar. Foi uma jornada intensa, mas valeu cada segundo. Hora de processar tudo e me preparar para os próximos desafios!
